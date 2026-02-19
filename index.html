@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VA Loan | NextHome — Live Package Build</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root{
+      --navy:#0b1f3a;
+      --navy2:#0f2a4d;
+      --gold:#f5c84c;
+      --gold2:#f0b429;
+      --ink:#111827;
+    }
+    .text-navy{ color:var(--navy); }
+    .bg-navy{ background:var(--navy); }
+    .bg-navy2{ background:var(--navy2); }
+    .btn-gold{
+      background: linear-gradient(180deg, var(--gold) 0%, var(--gold2) 100%);
+      box-shadow: 0 10px 25px rgba(240,180,41,.25);
+    }
+    .btn-gold:hover{ filter: brightness(0.98); transform: translateY(-1px); }
+    .ring-navy:focus{ box-shadow: 0 0 0 3px rgba(11,31,58,.25); }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900 antialiased">
+  <!-- Top band -->
+  <header class="border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-navy flex items-center justify-center text-white font-black">
+          VA
+        </div>
+        <div class="leading-tight">
+          <div class="font-extrabold text-navy">VA Loan | NextHome</div>
+          <div class="text-xs text-gray-500 -mt-0.5">Private execution sessions • PorchLight Realty</div>
+        </div>
+      </div>
+
+      <div class="hidden md:flex items-center gap-3 text-sm">
+        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-50 border border-gray-100">
+          <span class="w-2 h-2 rounded-full bg-green-500"></span>
+          <span class="font-semibold">Next session:</span>
+          <span>Feb 26 • 6:00pm</span>
+        </span>
+        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-50 border border-gray-100">
+          <span class="font-semibold">Seats:</span>
+          <span>10</span>
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-6 py-10 md:py-14">
+    <!-- Headline zone -->
+    <section class="text-center max-w-3xl mx-auto">
+      <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-navy leading-tight">
+        VA Loan | NextHome
+      </h1>
+      <p class="mt-3 text-lg md:text-xl text-gray-700 font-medium">
+        The 3-step strategy to acquire your next VA property —
+        <span class="font-extrabold text-navy">and leave with your package built.</span>
+      </p>
+      
+      <!-- Mobile CTA - Above the fold on mobile -->
+      <div class="md:hidden mt-6">
+        <a href="#registration-form" class="block w-full btn-gold rounded-full py-4 font-extrabold text-navy tracking-tight text-lg transition">
+          Reserve My Seat (10 Per Session)
+        </a>
+        <p class="mt-2 text-xs text-gray-500">Feb 26 • 6:00pm • North Park</p>
+      </div>
+
+      <p class="mt-4 md:mt-3 text-sm md:text-base text-gray-500">
+        Not a seminar. A <span class="font-bold text-gray-800">private, in-person execution session</span>:
+        a 20-minute orientation + live package build with an on-site loan officer.
+      </p>
+      <p class="mt-2 text-sm text-gray-500">
+        Dinner &amp; beverages provided • Spouses welcome
+      </p>
+    </section>
+
+    <section class="mt-10 grid lg:grid-cols-12 gap-10 items-start">
+      <!-- Left column -->
+      <div class="lg:col-span-7 space-y-8">
+        <!-- Video / hero visual -->
+        <div class="rounded-2xl border border-gray-100 shadow-sm overflow-hidden bg-white">
+          <div class="px-4 md:px-6 py-3 md:py-4 border-b border-gray-100 bg-gray-50">
+            <div class="flex items-center justify-between">
+              <div class="font-semibold text-navy text-sm md:text-base">Watch this first (60 seconds)</div>
+              <div class="hidden md:block text-xs text-gray-500">"Bring these items" + how the session works</div>
+            </div>
+          </div>
+
+          <!-- Replace with your embed -->
+          <div class="aspect-video bg-gray-100 flex items-center justify-center">
+            <div class="text-center px-8">
+              <div class="text-navy font-extrabold text-lg">Prep Video Placeholder</div>
+              <div class="text-gray-600 text-sm mt-1">
+                Replace this area with your YouTube/Vimeo embed.
+              </div>
+            </div>
+          </div>
+
+          <div class="px-4 md:px-6 py-4 md:py-5">
+            <div class="grid md:grid-cols-3 gap-3 md:gap-4">
+              <div class="rounded-xl border border-gray-100 bg-white p-3 md:p-4">
+                <div class="text-xs uppercase tracking-wider text-gray-500 font-bold">Step 1</div>
+                <div class="font-bold text-navy mt-1 text-sm md:text-base">20-minute orientation</div>
+                <div class="text-xs md:text-sm text-gray-600 mt-1">
+                  Buying without selling • entitlement after first use • multiple VA members strategy
+                </div>
+              </div>
+              <div class="rounded-xl border border-gray-100 bg-white p-3 md:p-4">
+                <div class="text-xs uppercase tracking-wider text-gray-500 font-bold">Step 2</div>
+                <div class="font-bold text-navy mt-1 text-sm md:text-base">Live package build</div>
+                <div class="text-xs md:text-sm text-gray-600 mt-1">
+                  Entitlement analysis • pre-approval (soft pull) • DTI review &amp; next steps
+                </div>
+              </div>
+              <div class="rounded-xl border border-gray-100 bg-white p-3 md:p-4">
+                <div class="text-xs uppercase tracking-wider text-gray-500 font-bold">Step 3</div>
+                <div class="font-bold text-navy mt-1 text-sm md:text-base">Leave cleared to move</div>
+                <div class="text-xs md:text-sm text-gray-600 mt-1">
+                  Verified plan + pre-approval ready to visit, analyze, and execute purchases
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile: Simplified benefits (collapsible on mobile) -->
+        <div class="md:hidden rounded-2xl border border-gray-100 shadow-sm bg-white p-4">
+          <h2 class="text-lg font-extrabold text-navy">What You Get</h2>
+          <ul class="mt-3 space-y-2 text-sm">
+            <li class="flex gap-2">
+              <span class="mt-1 w-4 h-4 rounded-full bg-green-50 border border-green-200 flex items-center justify-center text-green-700 text-xs font-black flex-shrink-0">✓</span>
+              <span><span class="font-bold">Entitlement analysis</span> (Tier 2 eligibility)</span>
+            </li>
+            <li class="flex gap-2">
+              <span class="mt-1 w-4 h-4 rounded-full bg-green-50 border border-green-200 flex items-center justify-center text-green-700 text-xs font-black flex-shrink-0">✓</span>
+              <span><span class="font-bold">Pre-approval</span> (soft inquiry—no credit hit)</span>
+            </li>
+            <li class="flex gap-2">
+              <span class="mt-1 w-4 h-4 rounded-full bg-green-50 border border-green-200 flex items-center justify-center text-green-700 text-xs font-black flex-shrink-0">✓</span>
+              <span><span class="font-bold">DTI review</span> + exact next steps</span>
+            </li>
+            <li class="flex gap-2">
+              <span class="mt-1 w-4 h-4 rounded-full bg-green-50 border border-green-200 flex items-center justify-center text-green-700 text-xs font-black flex-shrink-0">✓</span>
+              <span><span class="font-bold">Advanced strategies</span> for repeat buyers</span>
+            </li>
+            <li class="flex gap-2">
+              <span class="mt-1 w-4 h-4 rounded-full bg-green-50 border border-green-200 flex items-center justify-center text-green-700 text-xs font-black flex-shrink-0">✓</span>
+              <span><span class="font-bold">Ready-home lists</span> to analyze immediately</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Desktop: Full benefits -->
+        <div class="hidden md:block rounded-2xl border border-gray-100 shadow-sm bg-white p-6">
+          <h2 class="text-xl md:text-2xl font-extrabold text-navy">You leave with a FULL PACKAGE</h2>
+          <p class="mt-2 text-gray-600">
+            This session is built for execution. You don't leave with "ideas." You leave ready to take action.
+          </p>
+
+          <div class="mt-5 grid md:grid-cols-2 gap-4">
+            <ul class="space-y-3">
+              <li class="flex gap-3">
+                <span class="mt-1 w-5 h-5 rounded-full bg-green-50 border border-green-200 flex items-center justify-center text-green-700 text-xs font-black">✓</span>
+                <span><span class="font-bold">Entitlement analysis</span> (including after first use &amp; Tier 2)</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-1 w-5 h-5 rounded-full bg-green-50 border border-green-200 flex items-center justify-center text-green-700 text-xs font-black">✓</span>
+                <span><span class="font-bold">Pre-approval readiness</span> (soft inquiry — no credit impact)</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-1 w-5 h-5 rounded-full bg-green-50 border border-green-200 flex items-center justify-center text-green-700 text-xs font-black">✓</span>
+                <span><span class="font-bold">Debt-to-income review</span> + exact next steps</span>
+              </li>
+            </ul>
+
+            <ul class="space-y-3">
+              <li class="flex gap-3">
+                <span class="mt-1 w-5 h-5 rounded-full bg-green-50 border border-green-200 flex items-center justify-center text-green-700 text-xs font-black">✓</span>
+                <span><span class="font-bold">Insider info</span> on advanced VA buying strategies</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-1 w-5 h-5 rounded-full bg-green-50 border border-green-200 flex items-center justify-center text-green-700 text-xs font-black">✓</span>
+                <span><span class="font-bold">Ready-home investment lists</span> (options you can analyze immediately)</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-1 w-5 h-5 rounded-full bg-green-50 border border-green-200 flex items-center justify-center text-green-700 text-xs font-black">✓</span>
+                <span><span class="font-bold">Clear execution path</span> to visit, analyze, and purchase</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Why only 10 seats -->
+        <div class="rounded-2xl border border-gray-100 shadow-sm bg-gray-50 p-4 md:p-6">
+          <h3 class="text-base md:text-lg font-extrabold text-navy">Why only 10 seats</h3>
+          <div class="mt-3 grid md:grid-cols-3 gap-3 md:gap-4 text-xs md:text-sm">
+            <div class="rounded-xl bg-white border border-gray-100 p-3 md:p-4">
+              <div class="font-bold text-navy">Built live</div>
+              <div class="text-gray-600 mt-1">Each attendee gets real one-on-one package build time.</div>
+            </div>
+            <div class="rounded-xl bg-white border border-gray-100 p-3 md:p-4">
+              <div class="font-bold text-navy">On-site lender</div>
+              <div class="text-gray-600 mt-1">Pre-approval workflow is done in-session (soft inquiry).</div>
+            </div>
+            <div class="rounded-xl bg-white border border-gray-100 p-3 md:p-4">
+              <div class="font-bold text-navy">Documents required</div>
+              <div class="text-gray-600 mt-1">If you're not ready, we can't build your package.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right column: Form card -->
+      <div class="lg:col-span-5">
+        <div id="formCard" class="rounded-2xl border border-gray-100 shadow-xl overflow-hidden bg-white lg:sticky lg:top-6">
+          <div class="bg-navy text-white px-4 md:px-6 py-3 md:py-4">
+            <div class="flex items-center justify-between">
+              <div>
+                <div class="text-xs md:text-sm font-extrabold uppercase tracking-wider">Reserve your seat</div>
+                <div class="text-[10px] md:text-xs text-white/80 mt-0.5">Dinner &amp; beverages included</div>
+              </div>
+              <div class="text-[10px] md:text-xs font-bold px-2 md:px-3 py-1 rounded-full bg-white/10 border border-white/15">
+                10 seats
+              </div>
+            </div>
+          </div>
+
+          <div id="registration-form" class="p-4 md:p-6 lg:p-8">
+            <div class="rounded-xl border border-amber-200 bg-amber-50 px-3 md:px-4 py-2 md:py-3 text-xs md:text-sm">
+              <div class="font-extrabold text-amber-900">Next session: February 26 • 6:00pm</div>
+              <div class="text-amber-800">PorchLight Realty — North Park</div>
+              <div class="text-amber-800">3825 32nd St, San Diego, CA 92104</div>
+              <div class="text-amber-800 mt-2 pt-2 border-t border-amber-200">
+                <span class="font-semibold">Hosted by:</span> Virgilio Felix (DRE# 01994233) & Luiggi DeAnda (NMLS# 868173)
+              </div>
+            </div>
+
+            <form id="vaForm" class="mt-4 md:mt-6 space-y-3 md:space-y-4">
+              <!-- Core contact -->
+              <div class="grid gap-3">
+                <input id="name" name="name" required
+                  class="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm md:text-base focus:outline-none ring-navy"
+                  placeholder="Full Name *" />
+                <input id="email" name="email" type="email" required
+                  class="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm md:text-base focus:outline-none ring-navy"
+                  placeholder="Email *" />
+                <input id="phone" name="phone" type="tel" required
+                  class="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm md:text-base focus:outline-none ring-navy"
+                  placeholder="Phone Number *" />
+              </div>
+
+              <!-- Qualification -->
+              <div class="grid md:grid-cols-2 gap-3">
+                <select id="rank" name="rank" required
+                  class="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm md:text-base bg-white focus:outline-none ring-navy">
+                  <option value="" disabled selected>Status *</option>
+                  <option>Active Duty</option>
+                  <option>Veteran</option>
+                  <option>Retired</option>
+                  <option>Reserve/Guard</option>
+                </select>
+
+                <select id="timeline" name="timeline" required
+                  class="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm md:text-base bg-white focus:outline-none ring-navy">
+                  <option value="" disabled selected>Timeline *</option>
+                  <option>0–3 months</option>
+                  <option>3–6 months</option>
+                  <option>6–12 months</option>
+                  <option>Just researching</option>
+                </select>
+              </div>
+
+              <div class="grid md:grid-cols-2 gap-3">
+                <select id="activeVaLoan" name="active_va_loan" required
+                  class="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm md:text-base bg-white focus:outline-none ring-navy">
+                  <option value="" disabled selected>Have a VA loan now? *</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+
+                <select id="disability" name="va_disability_rating" required
+                  class="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm md:text-base bg-white focus:outline-none ring-navy">
+                  <option value="" disabled selected>VA disability rating *</option>
+                  <option>0%</option>
+                  <option>10–90%</option>
+                  <option>100% P&amp;T</option>
+                  <option>Prefer not to say</option>
+                </select>
+              </div>
+
+              <!-- Docs confirmation -->
+              <div class="rounded-xl border border-gray-100 bg-gray-50 p-3 md:p-4">
+                <div class="text-xs md:text-sm font-extrabold text-navy">Confirm you can bring these items</div>
+                <div class="text-[10px] md:text-xs text-gray-600 mt-1">Required for package build. Video sent after registration shows where to find each item.</div>
+
+                <div class="mt-3 grid gap-2 text-xs md:text-sm">
+                  <label class="flex items-center gap-2">
+                    <input id="docIncome" name="doc_income" type="checkbox" required class="h-4 w-4 flex-shrink-0">
+                    <span>Proof of income (LES/paystubs) *</span>
+                  </label>
+                  <label class="flex items-center gap-2">
+                    <input id="docCOE" name="doc_coe" type="checkbox" required class="h-4 w-4 flex-shrink-0">
+                    <span>VA COE (Certificate of Eligibility) *</span>
+                  </label>
+                  <label class="flex items-center gap-2">
+                    <input id="docMortgage" name="doc_mortgage" type="checkbox" class="h-4 w-4 flex-shrink-0">
+                    <span>Mortgage statement (if you own a home)</span>
+                  </label>
+                  <label class="flex items-center gap-2">
+                    <input id="docBenefits" name="doc_benefits_summary" type="checkbox" class="h-4 w-4 flex-shrink-0">
+                    <span>VA benefits summary letter (if applicable)</span>
+                  </label>
+                </div>
+              </div>
+
+              <button type="submit"
+                class="w-full btn-gold rounded-full py-4 font-extrabold text-navy tracking-tight text-base md:text-lg transition">
+                Reserve My Seat
+              </button>
+
+              <p class="text-[10px] md:text-[11px] text-gray-500 leading-relaxed text-center">
+                By submitting this form, you consent to receive SMS text messages and emails from PorchLight Realty and VA Loan | NextHome regarding your registration, event reminders, and related information. You may receive up to 5 messages. Message &amp; data rates may apply. Message frequency varies. Reply STOP to cancel or HELP for help at any time.
+                <span class="block mt-1">By registering, you agree to our <a href="terms.html" class="underline">Terms of Service</a> and <a href="privacy.html" class="underline">Privacy Policy</a>.</span>
+                <span class="block mt-1">No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.</span>
+              </p>
+            </form>
+          </div>
+        </div>
+
+        <div id="successCard" class="hidden rounded-2xl border border-green-200 bg-green-50 p-8 text-center shadow-sm">
+          <div class="text-green-900 font-extrabold text-2xl">Seat secured.</div>
+          <div class="text-green-800 mt-2">
+            Check your email/text for the prep video and what to bring.
+          </div>
+          <div class="text-sm text-green-800 mt-3">
+            <span class="font-bold">Feb 26 • 6:00pm</span>
+          </div>
+          <div class="text-sm text-green-800">
+            PorchLight Realty — North Park
+          </div>
+          <div class="text-sm text-green-800">
+            3825 32nd St, San Diego, CA 92104
+          </div>
+          <div class="text-sm text-green-800 mt-2">Dinner &amp; beverages provided • Spouses welcome</div>
+        </div>
+
+        <!-- Credibility strip -->
+        <div class="mt-6 rounded-2xl border border-gray-100 bg-white p-4 md:p-6 shadow-sm">
+          <div class="text-xs md:text-sm font-extrabold text-navy">Hosted by Virgilio Felix & Luiggi DeAnda</div>
+          <div class="text-xs md:text-sm text-gray-600 mt-1">
+            A specialized team combining real estate expertise and VA loan mastery — built for senior enlisted and veterans who want to execute, not sit through theory.
+          </div>
+          
+          <div class="mt-4 grid md:grid-cols-2 gap-3 md:gap-4 text-xs">
+            <div class="rounded-xl bg-gray-50 border border-gray-100 p-3 md:p-4">
+              <div class="font-bold text-navy">Virgilio Felix</div>
+              <div class="text-gray-600 mt-1">Real Estate Agent</div>
+              <div class="text-gray-500 mt-0.5">CA DRE# 01994233</div>
+              <div class="text-gray-600 mt-2">Property acquisition strategy + investment positioning for VA buyers</div>
+            </div>
+            <div class="rounded-xl bg-gray-50 border border-gray-100 p-3 md:p-4">
+              <div class="font-bold text-navy">Luiggi DeAnda</div>
+              <div class="text-gray-600 mt-1">Mortgage Loan Officer</div>
+              <div class="text-gray-500 mt-0.5">NMLS# 868173</div>
+              <div class="text-gray-600 mt-2">VA entitlement analysis + creative financing structures for repeat buyers</div>
+            </div>
+          </div>
+
+          <div class="mt-4 grid grid-cols-3 gap-2 md:gap-3 text-xs text-gray-600">
+            <div class="rounded-xl bg-gray-50 border border-gray-100 p-2 md:p-3">
+              <div class="font-bold text-navy">2 hours</div>
+              <div class="mt-0.5">In person</div>
+            </div>
+            <div class="rounded-xl bg-gray-50 border border-gray-100 p-2 md:p-3">
+              <div class="font-bold text-navy">Soft pull</div>
+              <div class="mt-0.5">No credit hit</div>
+            </div>
+            <div class="rounded-xl bg-gray-50 border border-gray-100 p-2 md:p-3">
+              <div class="font-bold text-navy">10 seats</div>
+              <div class="mt-0.5">Built live</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="mt-12 max-w-5xl mx-auto">
+      <div class="rounded-2xl border border-gray-100 bg-white p-4 md:p-6 lg:p-8 shadow-sm">
+        <h2 class="text-lg md:text-xl lg:text-2xl font-extrabold text-navy text-center">FAQ</h2>
+        <div class="mt-6 grid md:grid-cols-2 gap-4 md:gap-6 text-xs md:text-sm">
+          <div>
+            <div class="font-bold text-navy">Is this a seminar?</div>
+            <div class="text-gray-600 mt-1">No. It's a private execution session where we build your package live.</div>
+          </div>
+          <div>
+            <div class="font-bold text-navy">Why only 10 seats?</div>
+            <div class="text-gray-600 mt-1">Because underwriting and package builds happen on-site, one attendee at a time.</div>
+          </div>
+          <div>
+            <div class="font-bold text-navy">Does this affect my credit?</div>
+            <div class="text-gray-600 mt-1">No. Pre-approvals are done with soft inquiries.</div>
+          </div>
+          <div>
+            <div class="font-bold text-navy">Can I bring my spouse?</div>
+            <div class="text-gray-600 mt-1">Yes. Spouses are welcome (and dinner &amp; beverages are provided).</div>
+          </div>
+          <div>
+            <div class="font-bold text-navy">What do we cover?</div>
+            <div class="text-gray-600 mt-1">
+              Buying without selling, entitlement after first use, and advanced strategies for households with multiple VA members.
+            </div>
+          </div>
+          <div>
+            <div class="font-bold text-navy">What if I don't have the documents?</div>
+            <div class="text-gray-600 mt-1">We'll send the prep video immediately after registration showing where to find each item.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    /**
+     * Replace with your GoHighLevel webhook (or form endpoint).
+     * Example:
+     * const GHL_WEBHOOK_URL = "https://hooks.gohighlevel.com/.../your-webhook";
+     */
+    const GHL_WEBHOOK_URL = ""; // <-- paste yours here when ready
+
+    const form = document.getElementById("vaForm");
+    const formCard = document.getElementById("formCard");
+    const successCard = document.getElementById("successCard");
+
+    function serializeForm(formEl) {
+      const data = new FormData(formEl);
+      const obj = {};
+      for (const [k, v] of data.entries()) obj[k] = v;
+
+      // checkboxes (explicit)
+      obj.doc_income = document.getElementById("docIncome").checked ? "Yes" : "No";
+      obj.doc_coe = document.getElementById("docCOE").checked ? "Yes" : "No";
+      obj.doc_mortgage = document.getElementById("docMortgage").checked ? "Yes" : "No";
+      obj.doc_benefits_summary = document.getElementById("docBenefits").checked ? "Yes" : "No";
+
+      // metadata
+      obj.source = "VA Loan | NextHome Landing Page";
+      obj.session_date = "2026-02-26";
+      obj.location = "PorchLight Realty - North Park";
+      obj.dinner_provided = "Yes";
+      obj.spouse_welcome = "Yes";
+      obj.preapproval_credit_check = "Soft inquiry (no credit impact)";
+
+      return obj;
+    }
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const payload = serializeForm(form);
+
+      // sanity checks
+      if (!payload.name || !payload.email || !payload.phone || !payload.rank || !payload.timeline) {
+        alert("Please complete all required fields.");
+        return;
+      }
+
+      // Hard gate: must confirm core docs for the package build
+      if (payload.doc_income !== "Yes" || payload.doc_coe !== "Yes") {
+        alert("To reserve a seat, you must confirm you can bring proof of income and your VA COE.");
+        return;
+      }
+
+      try {
+        if (GHL_WEBHOOK_URL) {
+          const res = await fetch(GHL_WEBHOOK_URL, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload),
+          });
+          if (!res.ok) throw new Error("Webhook failed");
+        } else {
+          console.log("Form payload (set GHL_WEBHOOK_URL to submit):", payload);
+        }
+
+        formCard.classList.add("hidden");
+        successCard.classList.remove("hidden");
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      } catch (err) {
+        console.error(err);
+        alert("Something went wrong submitting the form. Try again or contact the team.");
+      }
+    });
+  </script>
+</body>
+</html>
