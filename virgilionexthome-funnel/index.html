@@ -1,0 +1,522 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.3">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;VA Loan | NextHome — Live Package Build&lt;/title&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Tailwind --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>:root{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--navy:#0b1f3a;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--navy2:#0f2a4d;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--gold:#f5c84c;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--gold2:#f0b429;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--ink:#111827;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.text-navy{ color:var(--navy); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.bg-navy{ background:var(--navy); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.bg-navy2{ background:var(--navy2); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn-gold{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(180deg, var(--gold) 0%, var(--gold2) 100%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 10px 25px rgba(240,180,41,.25);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn-gold:hover{ filter: brightness(0.98); transform: translateY(-1px); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.ring-navy:focus{ box-shadow: 0 0 0 3px rgba(11,31,58,.25); }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;body class="bg-white text-gray-900 antialiased"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Top band --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;header class="border-b border-gray-100"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="flex items-center gap-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="w-10 h-10 rounded-xl bg-navy flex items-center justify-center text-white font-black"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>VA</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="leading-tight"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="font-extrabold text-navy"&gt;VA Loan | NextHome&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="text-xs text-gray-500 -mt-0.5"&gt;Private execution sessions • PorchLight Realty&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="hidden md:flex items-center gap-3 text-sm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-50 border border-gray-100"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="w-2 h-2 rounded-full bg-green-500"&gt;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="font-semibold"&gt;Next session:&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span&gt;Feb 26 • 6:00pm&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-50 border border-gray-100"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="font-semibold"&gt;Seats:&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span&gt;10&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;main class="max-w-7xl mx-auto px-6 py-10 md:py-14"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Headline zone --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="text-center max-w-3xl mx-auto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-navy leading-tight"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>VA Loan | NextHome</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="mt-3 text-lg md:text-xl text-gray-700 font-medium"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>The 3-step strategy to acquire your next VA property —</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="font-extrabold text-navy"&gt;and leave with your package built.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/p&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Mobile CTA - Above the fold on mobile --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="md:hidden mt-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#registration-form" class="block w-full btn-gold rounded-full py-4 font-extrabold text-navy tracking-tight text-lg transition"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>Reserve My Seat (10 Per Session)</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="mt-2 text-xs text-gray-500"&gt;Feb 26 • 6:00pm • North Park&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="mt-4 md:mt-3 text-sm md:text-base text-gray-500"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>Not a seminar. A &lt;span class="font-bold text-gray-800"&gt;private, in-person execution session&lt;/span&gt;:</p>
+<p class="p1"><span class="Apple-converted-space">        </span>a 20-minute orientation + live package build with an on-site loan officer.</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="mt-2 text-sm text-gray-500"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>Dinner &amp;amp; beverages provided • Spouses welcome</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="mt-10 grid lg:grid-cols-12 gap-10 items-start"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Left column --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="lg:col-span-7 space-y-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Video / hero visual --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="rounded-2xl border border-gray-100 shadow-sm overflow-hidden bg-white"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="px-4 md:px-6 py-3 md:py-4 border-b border-gray-100 bg-gray-50"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="flex items-center justify-between"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="font-semibold text-navy text-sm md:text-base"&gt;Watch this first (60 seconds)&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="hidden md:block text-xs text-gray-500"&gt;"Bring these items" + how the session works&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;!-- Replace with your embed --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="aspect-video bg-gray-100 flex items-center justify-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="text-center px-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="text-navy font-extrabold text-lg"&gt;Prep Video Placeholder&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="text-gray-600 text-sm mt-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>Replace this area with your YouTube/Vimeo embed.</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="px-4 md:px-6 py-4 md:py-5"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid md:grid-cols-3 gap-3 md:gap-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="rounded-xl border border-gray-100 bg-white p-3 md:p-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="text-xs uppercase tracking-wider text-gray-500 font-bold"&gt;Step 1&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="font-bold text-navy mt-1 text-sm md:text-base"&gt;20-minute orientation&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="text-xs md:text-sm text-gray-600 mt-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>Buying without selling • entitlement after first use • multiple VA members strategy</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="rounded-xl border border-gray-100 bg-white p-3 md:p-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="text-xs uppercase tracking-wider text-gray-500 font-bold"&gt;Step 2&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="font-bold text-navy mt-1 text-sm md:text-base"&gt;Live package build&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="text-xs md:text-sm text-gray-600 mt-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>Entitlement analysis • pre-approval (soft pull) • DTI review &amp;amp; next steps</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="rounded-xl border border-gray-100 bg-white p-3 md:p-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="text-xs uppercase tracking-wider text-gray-500 font-bold"&gt;Step 3&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="font-bold text-navy mt-1 text-sm md:text-base"&gt;Leave cleared to move&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="text-xs md:text-sm text-gray-600 mt-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>Verified plan + pre-approval ready to visit, analyze, and execute purchases</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Mobile: Simplified benefits (collapsible on mobile) --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="md:hidden rounded-2xl border border-gray-100 shadow-sm bg-white p-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h2 class="text-lg font-extrabold text-navy"&gt;What You Get&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;ul class="mt-3 space-y-2 text-sm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li class="flex gap-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;span class="mt-1 w-4 h-4 rounded-full bg-green-50 border border-green-200 flex items-center justify-center text-green-700 text-xs font-black flex-shrink-0"&gt;✓&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;span&gt;&lt;span class="font-bold"&gt;Entitlement analysis&lt;/span&gt; (Tier 2 eligibility)&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li class="flex gap-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;span class="mt-1 w-4 h-4 rounded-full bg-green-50 border border-green-200 flex items-center justify-center text-green-700 text-xs font-black flex-shrink-0"&gt;✓&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;span&gt;&lt;span class="font-bold"&gt;Pre-approval&lt;/span&gt; (soft inquiry—no credit hit)&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li class="flex gap-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;span class="mt-1 w-4 h-4 rounded-full bg-green-50 border border-green-200 flex items-center justify-center text-green-700 text-xs font-black flex-shrink-0"&gt;✓&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;span&gt;&lt;span class="font-bold"&gt;DTI review&lt;/span&gt; + exact next steps&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li class="flex gap-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;span class="mt-1 w-4 h-4 rounded-full bg-green-50 border border-green-200 flex items-center justify-center text-green-700 text-xs font-black flex-shrink-0"&gt;✓&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;span&gt;&lt;span class="font-bold"&gt;Advanced strategies&lt;/span&gt; for repeat buyers&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li class="flex gap-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;span class="mt-1 w-4 h-4 rounded-full bg-green-50 border border-green-200 flex items-center justify-center text-green-700 text-xs font-black flex-shrink-0"&gt;✓&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;span&gt;&lt;span class="font-bold"&gt;Ready-home lists&lt;/span&gt; to analyze immediately&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Desktop: Full benefits --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="hidden md:block rounded-2xl border border-gray-100 shadow-sm bg-white p-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h2 class="text-xl md:text-2xl font-extrabold text-navy"&gt;You leave with a FULL PACKAGE&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="mt-2 text-gray-600"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>This session is built for execution. You don't leave with "ideas." You leave ready to take action.</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="mt-5 grid md:grid-cols-2 gap-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;ul class="space-y-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;li class="flex gap-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="mt-1 w-5 h-5 rounded-full bg-green-50 border border-green-200 flex items-center justify-center text-green-700 text-xs font-black"&gt;✓&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span&gt;&lt;span class="font-bold"&gt;Entitlement analysis&lt;/span&gt; (including after first use &amp;amp; Tier 2)&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;li class="flex gap-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="mt-1 w-5 h-5 rounded-full bg-green-50 border border-green-200 flex items-center justify-center text-green-700 text-xs font-black"&gt;✓&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span&gt;&lt;span class="font-bold"&gt;Pre-approval readiness&lt;/span&gt; (soft inquiry — no credit impact)&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;li class="flex gap-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="mt-1 w-5 h-5 rounded-full bg-green-50 border border-green-200 flex items-center justify-center text-green-700 text-xs font-black"&gt;✓&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span&gt;&lt;span class="font-bold"&gt;Debt-to-income review&lt;/span&gt; + exact next steps&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;ul class="space-y-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;li class="flex gap-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="mt-1 w-5 h-5 rounded-full bg-green-50 border border-green-200 flex items-center justify-center text-green-700 text-xs font-black"&gt;✓&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span&gt;&lt;span class="font-bold"&gt;Insider info&lt;/span&gt; on advanced VA buying strategies&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;li class="flex gap-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="mt-1 w-5 h-5 rounded-full bg-green-50 border border-green-200 flex items-center justify-center text-green-700 text-xs font-black"&gt;✓&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span&gt;&lt;span class="font-bold"&gt;Ready-home investment lists&lt;/span&gt; (options you can analyze immediately)&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;li class="flex gap-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="mt-1 w-5 h-5 rounded-full bg-green-50 border border-green-200 flex items-center justify-center text-green-700 text-xs font-black"&gt;✓&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span&gt;&lt;span class="font-bold"&gt;Clear execution path&lt;/span&gt; to visit, analyze, and purchase&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Why only 10 seats --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="rounded-2xl border border-gray-100 shadow-sm bg-gray-50 p-4 md:p-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3 class="text-base md:text-lg font-extrabold text-navy"&gt;Why only 10 seats&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="mt-3 grid md:grid-cols-3 gap-3 md:gap-4 text-xs md:text-sm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="rounded-xl bg-white border border-gray-100 p-3 md:p-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="font-bold text-navy"&gt;Built live&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="text-gray-600 mt-1"&gt;Each attendee gets real one-on-one package build time.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="rounded-xl bg-white border border-gray-100 p-3 md:p-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="font-bold text-navy"&gt;On-site lender&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="text-gray-600 mt-1"&gt;Pre-approval workflow is done in-session (soft inquiry).&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="rounded-xl bg-white border border-gray-100 p-3 md:p-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="font-bold text-navy"&gt;Documents required&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="text-gray-600 mt-1"&gt;If you're not ready, we can't build your package.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Right column: Form card --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="lg:col-span-5"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="formCard" class="rounded-2xl border border-gray-100 shadow-xl overflow-hidden bg-white lg:sticky lg:top-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="bg-navy text-white px-4 md:px-6 py-3 md:py-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="flex items-center justify-between"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="text-xs md:text-sm font-extrabold uppercase tracking-wider"&gt;Reserve your seat&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="text-[10px] md:text-xs text-white/80 mt-0.5"&gt;Dinner &amp;amp; beverages included&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="text-[10px] md:text-xs font-bold px-2 md:px-3 py-1 rounded-full bg-white/10 border border-white/15"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>10 seats</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div id="registration-form" class="p-4 md:p-6 lg:p-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="rounded-xl border border-amber-200 bg-amber-50 px-3 md:px-4 py-2 md:py-3 text-xs md:text-sm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="font-extrabold text-amber-900"&gt;Next session: February 26 • 6:00pm&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="text-amber-800"&gt;PorchLight Realty — North Park&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="text-amber-800"&gt;3825 32nd St, San Diego, CA 92104&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="text-amber-800 mt-2 pt-2 border-t border-amber-200"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="font-semibold"&gt;Hosted by:&lt;/span&gt; Virgilio Felix (DRE# 01994233) &amp; Luiggi DeAnda (NMLS# 868173)</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;form id="vaForm" class="mt-4 md:mt-6 space-y-3 md:space-y-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;!-- Core contact --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="grid gap-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;input id="name" name="name" required</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>class="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm md:text-base focus:outline-none ring-navy"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>placeholder="Full Name *" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;input id="email" name="email" type="email" required</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>class="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm md:text-base focus:outline-none ring-navy"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>placeholder="Email *" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;input id="phone" name="phone" type="tel" required</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>class="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm md:text-base focus:outline-none ring-navy"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>placeholder="Phone Number *" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;!-- Qualification --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="grid md:grid-cols-2 gap-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;select id="rank" name="rank" required</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>class="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm md:text-base bg-white focus:outline-none ring-navy"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;option value="" disabled selected&gt;Status *&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;option&gt;Active Duty&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;option&gt;Veteran&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;option&gt;Retired&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;option&gt;Reserve/Guard&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/select&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;select id="timeline" name="timeline" required</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>class="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm md:text-base bg-white focus:outline-none ring-navy"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;option value="" disabled selected&gt;Timeline *&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;option&gt;0–3 months&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;option&gt;3–6 months&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;option&gt;6–12 months&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;option&gt;Just researching&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="grid md:grid-cols-2 gap-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;select id="activeVaLoan" name="active_va_loan" required</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>class="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm md:text-base bg-white focus:outline-none ring-navy"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;option value="" disabled selected&gt;Have a VA loan now? *&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;option value="Yes"&gt;Yes&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;option value="No"&gt;No&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/select&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;select id="disability" name="va_disability_rating" required</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>class="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm md:text-base bg-white focus:outline-none ring-navy"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;option value="" disabled selected&gt;VA disability rating *&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;option&gt;0%&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;option&gt;10–90%&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;option&gt;100% P&amp;amp;T&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;option&gt;Prefer not to say&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;!-- Docs confirmation --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="rounded-xl border border-gray-100 bg-gray-50 p-3 md:p-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="text-xs md:text-sm font-extrabold text-navy"&gt;Confirm you can bring these items&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="text-[10px] md:text-xs text-gray-600 mt-1"&gt;Required for package build. Video sent after registration shows where to find each item.&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="mt-3 grid gap-2 text-xs md:text-sm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;label class="flex items-center gap-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input id="docIncome" name="doc_income" type="checkbox" required class="h-4 w-4 flex-shrink-0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span&gt;Proof of income (LES/paystubs) *&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;label class="flex items-center gap-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input id="docCOE" name="doc_coe" type="checkbox" required class="h-4 w-4 flex-shrink-0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span&gt;VA COE (Certificate of Eligibility) *&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;label class="flex items-center gap-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input id="docMortgage" name="doc_mortgage" type="checkbox" class="h-4 w-4 flex-shrink-0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span&gt;Mortgage statement (if you own a home)&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;label class="flex items-center gap-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input id="docBenefits" name="doc_benefits_summary" type="checkbox" class="h-4 w-4 flex-shrink-0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span&gt;VA benefits summary letter (if applicable)&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;button type="submit"</p>
+<p class="p1"><span class="Apple-converted-space">                </span>class="w-full btn-gold rounded-full py-4 font-extrabold text-navy tracking-tight text-base md:text-lg transition"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>Reserve My Seat</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/button&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;p class="text-[10px] md:text-[11px] text-gray-500 leading-relaxed text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>By submitting this form, you consent to receive SMS text messages and emails from PorchLight Realty and VA Loan | NextHome regarding your registration, event reminders, and related information. You may receive up to 5 messages. Message &amp;amp; data rates may apply. Message frequency varies. Reply STOP to cancel or HELP for help at any time.</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="block mt-1"&gt;By registering, you agree to our &lt;a href="terms.html" class="underline"&gt;Terms of Service&lt;/a&gt; and &lt;a href="privacy.html" class="underline"&gt;Privacy Policy&lt;/a&gt;.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="block mt-1"&gt;No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="successCard" class="hidden rounded-2xl border border-green-200 bg-green-50 p-8 text-center shadow-sm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="text-green-900 font-extrabold text-2xl"&gt;Seat secured.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="text-green-800 mt-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>Check your email/text for the prep video and what to bring.</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="text-sm text-green-800 mt-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="font-bold"&gt;Feb 26 • 6:00pm&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="text-sm text-green-800"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>PorchLight Realty — North Park</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="text-sm text-green-800"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>3825 32nd St, San Diego, CA 92104</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="text-sm text-green-800 mt-2"&gt;Dinner &amp;amp; beverages provided • Spouses welcome&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Credibility strip --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="mt-6 rounded-2xl border border-gray-100 bg-white p-4 md:p-6 shadow-sm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="text-xs md:text-sm font-extrabold text-navy"&gt;Hosted by Virgilio Felix &amp; Luiggi DeAnda&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="text-xs md:text-sm text-gray-600 mt-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>A specialized team combining real estate expertise and VA loan mastery — built for senior enlisted and veterans who want to execute, not sit through theory.</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">          </span></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="mt-4 grid md:grid-cols-2 gap-3 md:gap-4 text-xs"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="rounded-xl bg-gray-50 border border-gray-100 p-3 md:p-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="font-bold text-navy"&gt;Virgilio Felix&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="text-gray-600 mt-1"&gt;Real Estate Agent&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="text-gray-500 mt-0.5"&gt;CA DRE# 01994233&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="text-gray-600 mt-2"&gt;Property acquisition strategy + investment positioning for VA buyers&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="rounded-xl bg-gray-50 border border-gray-100 p-3 md:p-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="font-bold text-navy"&gt;Luiggi DeAnda&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="text-gray-600 mt-1"&gt;Mortgage Loan Officer&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="text-gray-500 mt-0.5"&gt;NMLS# 868173&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="text-gray-600 mt-2"&gt;VA entitlement analysis + creative financing structures for repeat buyers&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="mt-4 grid grid-cols-3 gap-2 md:gap-3 text-xs text-gray-600"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="rounded-xl bg-gray-50 border border-gray-100 p-2 md:p-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="font-bold text-navy"&gt;2 hours&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="mt-0.5"&gt;In person&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="rounded-xl bg-gray-50 border border-gray-100 p-2 md:p-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="font-bold text-navy"&gt;Soft pull&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="mt-0.5"&gt;No credit hit&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="rounded-xl bg-gray-50 border border-gray-100 p-2 md:p-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="font-bold text-navy"&gt;10 seats&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="mt-0.5"&gt;Built live&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- FAQ --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="mt-12 max-w-5xl mx-auto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="rounded-2xl border border-gray-100 bg-white p-4 md:p-6 lg:p-8 shadow-sm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="text-lg md:text-xl lg:text-2xl font-extrabold text-navy text-center"&gt;FAQ&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="mt-6 grid md:grid-cols-2 gap-4 md:gap-6 text-xs md:text-sm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="font-bold text-navy"&gt;Is this a seminar?&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="text-gray-600 mt-1"&gt;No. It's a private execution session where we build your package live.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="font-bold text-navy"&gt;Why only 10 seats?&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="text-gray-600 mt-1"&gt;Because underwriting and package builds happen on-site, one attendee at a time.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="font-bold text-navy"&gt;Does this affect my credit?&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="text-gray-600 mt-1"&gt;No. Pre-approvals are done with soft inquiries.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="font-bold text-navy"&gt;Can I bring my spouse?&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="text-gray-600 mt-1"&gt;Yes. Spouses are welcome (and dinner &amp;amp; beverages are provided).&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="font-bold text-navy"&gt;What do we cover?&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="text-gray-600 mt-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>Buying without selling, entitlement after first use, and advanced strategies for households with multiple VA members.</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="font-bold text-navy"&gt;What if I don't have the documents?&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="text-gray-600 mt-1"&gt;We'll send the prep video immediately after registration showing where to find each item.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/main&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>/**</p>
+<p class="p1"><span class="Apple-converted-space">     </span>* Replace with your GoHighLevel webhook (or form endpoint).</p>
+<p class="p1"><span class="Apple-converted-space">     </span>* Example:</p>
+<p class="p1"><span class="Apple-converted-space">     </span>* const GHL_WEBHOOK_URL = "https://hooks.gohighlevel.com/.../your-webhook";</p>
+<p class="p1"><span class="Apple-converted-space">     </span>*/</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const GHL_WEBHOOK_URL = ""; // &lt;-- paste yours here when ready</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>const form = document.getElementById("vaForm");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const formCard = document.getElementById("formCard");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const successCard = document.getElementById("successCard");</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function serializeForm(formEl) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const data = new FormData(formEl);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const obj = {};</p>
+<p class="p1"><span class="Apple-converted-space">      </span>for (const [k, v] of data.entries()) obj[k] = v;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>// checkboxes (explicit)</p>
+<p class="p1"><span class="Apple-converted-space">      </span>obj.doc_income = document.getElementById("docIncome").checked ? "Yes" : "No";</p>
+<p class="p1"><span class="Apple-converted-space">      </span>obj.doc_coe = document.getElementById("docCOE").checked ? "Yes" : "No";</p>
+<p class="p1"><span class="Apple-converted-space">      </span>obj.doc_mortgage = document.getElementById("docMortgage").checked ? "Yes" : "No";</p>
+<p class="p1"><span class="Apple-converted-space">      </span>obj.doc_benefits_summary = document.getElementById("docBenefits").checked ? "Yes" : "No";</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>// metadata</p>
+<p class="p1"><span class="Apple-converted-space">      </span>obj.source = "VA Loan | NextHome Landing Page";</p>
+<p class="p1"><span class="Apple-converted-space">      </span>obj.session_date = "2026-02-26";</p>
+<p class="p1"><span class="Apple-converted-space">      </span>obj.location = "PorchLight Realty - North Park";</p>
+<p class="p1"><span class="Apple-converted-space">      </span>obj.dinner_provided = "Yes";</p>
+<p class="p1"><span class="Apple-converted-space">      </span>obj.spouse_welcome = "Yes";</p>
+<p class="p1"><span class="Apple-converted-space">      </span>obj.preapproval_credit_check = "Soft inquiry (no credit impact)";</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>return obj;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>form.addEventListener("submit", async (e) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>e.preventDefault();</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>const payload = serializeForm(form);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>// sanity checks</p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (!payload.name || !payload.email || !payload.phone || !payload.rank || !payload.timeline) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>alert("Please complete all required fields.");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>return;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>// Hard gate: must confirm core docs for the package build</p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (payload.doc_income !== "Yes" || payload.doc_coe !== "Yes") {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>alert("To reserve a seat, you must confirm you can bring proof of income and your VA COE.");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>return;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>try {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (GHL_WEBHOOK_URL) {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>const res = await fetch(GHL_WEBHOOK_URL, {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>method: "POST",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>headers: { "Content-Type": "application/json" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>body: JSON.stringify(payload),</p>
+<p class="p1"><span class="Apple-converted-space">          </span>});</p>
+<p class="p1"><span class="Apple-converted-space">          </span>if (!res.ok) throw new Error("Webhook failed");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>console.log("Form payload (set GHL_WEBHOOK_URL to submit):", payload);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>formCard.classList.add("hidden");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>successCard.classList.remove("hidden");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>window.scrollTo({ top: 0, behavior: "smooth" });</p>
+<p class="p1"><span class="Apple-converted-space">      </span>} catch (err) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>console.error(err);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>alert("Something went wrong submitting the form. Try again or contact the team.");</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
