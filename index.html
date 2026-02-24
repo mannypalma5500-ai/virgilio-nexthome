@@ -46,7 +46,7 @@
         <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-50 border border-gray-100">
           <span class="w-2 h-2 rounded-full bg-green-500"></span>
           <span class="font-semibold">Next session:</span>
-          <span>Feb 26 • 6:00pm</span>
+          <span>Mar 12 • 6:00pm</span>
         </span>
         <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-50 border border-gray-100">
           <span class="font-semibold">Seats:</span>
@@ -72,7 +72,7 @@
         <a href="#registration-form" class="block w-full btn-gold rounded-full py-4 font-extrabold text-navy tracking-tight text-lg transition">
           Reserve My Seat (10 Per Session)
         </a>
-        <p class="mt-2 text-xs text-gray-500">Feb 26 • 6:00pm • North Park</p>
+        <p class="mt-2 text-xs text-gray-500">Mar 12 • 6:00pm • North Park</p>
       </div>
 
       <p class="mt-4 md:mt-3 text-sm md:text-base text-gray-500">
@@ -237,7 +237,7 @@
 
           <div id="registration-form" class="p-4 md:p-6 lg:p-8">
             <div class="rounded-xl border border-amber-200 bg-amber-50 px-3 md:px-4 py-2 md:py-3 text-xs md:text-sm">
-              <div class="font-extrabold text-amber-900">Next session: February 26 • 6:00pm</div>
+              <div class="font-extrabold text-amber-900">Next session: March 12 • 6:00pm</div>
               <div class="text-amber-800">PorchLight Realty — North Park</div>
               <div class="text-amber-800">3825 32nd St, San Diego, CA 92104</div>
               <div class="text-amber-800 mt-2 pt-2 border-t border-amber-200">
@@ -246,6 +246,27 @@
             </div>
 
             <form id="vaForm" class="mt-4 md:mt-6 space-y-3 md:space-y-4">
+              <!-- Date Selection -->
+              <div class="rounded-xl border-2 border-navy/10 bg-white p-4">
+                <label class="block text-sm font-bold text-navy mb-3">Select Your Session Date *</label>
+                <div class="grid grid-cols-2 gap-3">
+                  <label class="relative cursor-pointer">
+                    <input type="radio" name="session_date" value="2026-03-12" required class="peer sr-only" />
+                    <div class="rounded-lg border-2 border-gray-200 p-3 text-center transition peer-checked:border-navy peer-checked:bg-navy/5">
+                      <div class="font-bold text-navy text-sm md:text-base">March 12</div>
+                      <div class="text-xs text-gray-600 mt-1">6:00pm PST</div>
+                    </div>
+                  </label>
+                  <label class="relative cursor-pointer">
+                    <input type="radio" name="session_date" value="2026-03-26" required class="peer sr-only" />
+                    <div class="rounded-lg border-2 border-gray-200 p-3 text-center transition peer-checked:border-navy peer-checked:bg-navy/5">
+                      <div class="font-bold text-navy text-sm md:text-base">March 26</div>
+                      <div class="text-xs text-gray-600 mt-1">6:00pm PST</div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+
               <!-- Core contact -->
               <div class="grid gap-3">
                 <input id="name" name="name" required
@@ -323,15 +344,25 @@
                 </div>
               </div>
 
+              <!-- A2P 10DLC SMS Consent Checkbox -->
+              <div class="rounded-xl border border-gray-200 bg-gray-50 p-4">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input id="smsConsent" name="sms_consent" type="checkbox" required class="h-4 w-4 flex-shrink-0 mt-0.5 rounded border-gray-300" />
+                  <span class="text-xs leading-relaxed text-gray-700" style="font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif;">
+                    I consent to receive SMS notifications and alerts from Virgilio Felix Real Estate. Message frequency varies. Msg & data rates may apply. Text STOP to cancel, HELP for help.
+                  </span>
+                </label>
+              </div>
+
               <button type="submit"
                 class="w-full btn-gold rounded-full py-4 font-extrabold text-navy tracking-tight text-base md:text-lg transition">
                 Reserve My Seat
               </button>
 
-              <p class="text-[10px] md:text-[11px] text-gray-500 leading-relaxed text-center">
+              <p class="text-xs leading-relaxed text-gray-600 text-center" style="font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif; font-size: 12px;">
                 By submitting this form, you consent to receive SMS text messages and emails from PorchLight Realty and VA Loan | NextHome regarding your registration, event reminders, and related information. You may receive up to 5 messages. Message &amp; data rates may apply. Message frequency varies. Reply STOP to cancel or HELP for help at any time.
-                <span class="block mt-1">By registering, you agree to our <a href="terms.html" class="underline">Terms of Service</a> and <a href="privacy.html" class="underline">Privacy Policy</a>.</span>
-                <span class="block mt-1">No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.</span>
+                <span class="block mt-2">By registering, you agree to our <a href="https://nexthome.virgiliofelixrealestate.com/terms" class="underline hover:text-navy">Terms of Service</a> and <a href="https://nexthome.virgiliofelixrealestate.com/privacy" class="underline hover:text-navy">Privacy Policy</a>.</span>
+                <span class="block mt-2">No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. All other categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.</span>
               </p>
             </form>
           </div>
@@ -343,7 +374,7 @@
             Check your email/text for the prep video and what to bring.
           </div>
           <div class="text-sm text-green-800 mt-3">
-            <span class="font-bold">Feb 26 • 6:00pm</span>
+            <span class="font-bold">Mar 12 • 6:00pm</span>
           </div>
           <div class="text-sm text-green-800">
             PorchLight Realty — North Park
@@ -430,6 +461,18 @@
     </section>
   </main>
 
+  <footer class="border-t border-gray-100 mt-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6 py-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-600" style="font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif;">
+        <div class="text-xs md:text-sm">© 2026 PorchLight Realty. All rights reserved.</div>
+        <div class="flex gap-6 text-xs md:text-sm">
+          <a href="https://nexthome.virgiliofelixrealestate.com/terms" class="hover:text-navy underline">Terms of Service</a>
+          <a href="https://nexthome.virgiliofelixrealestate.com/privacy" class="hover:text-navy underline">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
   <script>
     /**
      * Replace with your GoHighLevel webhook (or form endpoint).
@@ -455,7 +498,6 @@
 
       // metadata
       obj.source = "VA Loan | NextHome Landing Page";
-      obj.session_date = "2026-02-26";
       obj.location = "PorchLight Realty - North Park";
       obj.dinner_provided = "Yes";
       obj.spouse_welcome = "Yes";
@@ -475,11 +517,27 @@
         return;
       }
 
+      // Check date selection
+      if (!payload.session_date) {
+        alert("Please select a session date.");
+        return;
+      }
+
       // Hard gate: must confirm core docs for the package build
       if (payload.doc_income !== "Yes" || payload.doc_coe !== "Yes") {
         alert("To reserve a seat, you must confirm you can bring proof of income and your VA COE.");
         return;
       }
+
+      // A2P 10DLC Compliance: Verify SMS consent checkbox
+      if (!document.getElementById("smsConsent").checked) {
+        alert("You must consent to receive SMS notifications to complete registration.");
+        return;
+      }
+
+      // Add SMS consent to payload
+      payload.sms_consent = "Yes";
+      payload.sms_consent_timestamp = new Date().toISOString();
 
       try {
         if (GHL_WEBHOOK_URL) {
